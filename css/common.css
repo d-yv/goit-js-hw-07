@@ -57,12 +57,27 @@ body {
   padding: 8px 16px;
 }
 
-
-
 /* task-2 */
 .gallery {
   display: flex;
   gap: 48px 24px;
   flex-wrap: wrap;
   list-style-type: none;
+}
+
+/* task-3 */
+.name-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.name-input::placeholder {
+  color: #2e2f42;
 }
