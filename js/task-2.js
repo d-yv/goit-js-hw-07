@@ -26,13 +26,8 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-for (const img of images) {
-  const imageList = document.createElement("li");
-  const image = document.createElement("img");
-  image.src = img.url;
-  image.alt = img.alt;
-  image.width = 360;
-  image.height = 300;
-  imageList.append(image);
-  gallery.append(imageList);
-}
+const imagesArr = images
+  .map((img) => `<li><img src="${img.url}" alt = "${img.alt}" /></li>`)
+  .join("");
+
+gallery.innerHTML = imagesArr;

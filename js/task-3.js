@@ -3,10 +3,11 @@ const insertName = document.querySelector("#name-output");
 inputField.setAttribute("class", "name-input");
 
 const inputName = () => {
-  if (inputField.value === " " || inputField.value === "") {
+  const valTrim = inputField.value.trim();
+  if (!valTrim) {
     insertName.innerHTML = "Anonymous";
   } else {
-    insertName.innerHTML = inputField.value.trim();
+    insertName.innerHTML = valTrim;
   }
 };
 inputField.addEventListener("input", inputName);

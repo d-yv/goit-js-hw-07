@@ -65,6 +65,11 @@ body {
   list-style-type: none;
 }
 
+.gallery img {
+  width: 360px;
+  height: 300px;
+}
+
 /* task-3 */
 .name-input {
   font-weight: 400;
